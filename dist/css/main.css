@@ -1,6 +1,198 @@
+.container {
+  max-width: 1200px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 2rem 0; }
+
+.my-3 {
+  margin: 3rem 0; }
+
+.btn-home, .btn-contact {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.7rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer; }
+
+.btn-home {
+  color: #fff;
+  background: #c50e0e;
+  width: 8rem; }
+
+.btn-contact {
+  color: #fff;
+  background: #c50e0e;
+  width: 100%; }
+
+button[class^="btn-"]:hover {
+  color: #333;
+  background: #f15959; }
+
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
-  font-family: "Rubik", sans-serif; }
+  font-family: "Rubik", sans-serif;
+  line-height: 1.6;
+  background-color: #f5eeee; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+  a:hover {
+    color: #c50e0e; }
+
+ul {
+  list-style: none; }
+
+h1 {
+  font-size: 50px; }
+
+h2 {
+  font-size: 35px; }
+
+#app-wrapper {
+  max-width: 1200px;
+  margin: 40px auto; }
+
+#main-navbar {
+  text-align: center; }
+  #main-navbar i {
+    display: inline-block;
+    color: #c50e0e; }
+  #main-navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+    font-weight: 700; }
+  #main-navbar-gallery {
+    text-align: center; }
+    #main-navbar-gallery i {
+      color: #c50e0e;
+      padding: 5px; }
+    #main-navbar-gallery ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      padding: 10px;
+      font-weight: 700; }
+      #main-navbar-gallery ul li {
+        color: #333;
+        display: inline-block;
+        padding: 1rem;
+        position: relative; }
+        #main-navbar-gallery ul li ul {
+          display: none; }
+        #main-navbar-gallery ul li:hover {
+          cursor: pointer;
+          color: #c50e0e; }
+        #main-navbar-gallery ul li:hover ul {
+          display: block;
+          position: absolute;
+          left: 0;
+          width: 200px;
+          margin-top: 0.7rem; }
+        #main-navbar-gallery ul li:hover ul li {
+          display: block;
+          background: #f5eeee; }
+
+#gallery h1 {
+  text-align: center;
+  margin-bottom: 3rem; }
+
+#gallery h2 {
+  margin-left: 1.5rem; }
+
+#gallery .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  #gallery .container img {
+    width: 18rem;
+    height: 23rem; }
+
+#home-form .container {
+  text-align: center;
+  margin: 0 200px; }
+  #home-form .container form .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 0.5rem; }
+    #home-form .container form .form-group label {
+      display: inline-block;
+      margin: 10px 0; }
+    #home-form .container form .form-group input {
+      padding: 10px;
+      border: none; }
+      #home-form .container form .form-group input:hover {
+        border: 1px solid #c50e0e; }
+    #home-form .container form .form-group textarea {
+      padding: 30px;
+      margin-bottom: 20px;
+      border: none; }
+      #home-form .container form .form-group textarea:hover {
+        border: 1px solid #c50e0e; }
+
+#about-info .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #about-info .container img {
+    width: 30%; }
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #contact-form .container div {
+    display: flex;
+    flex-direction: column; }
+  #contact-form .container label {
+    display: inline-block;
+    margin: 10px 0; }
+  #contact-form .container input {
+    padding: 10px;
+    border: none;
+    width: 40vw; }
+    #contact-form .container input:hover {
+      border: 1px solid #c50e0e; }
+  #contact-form .container textarea {
+    padding: 30px;
+    margin-bottom: 20px;
+    border: none; }
+    #contact-form .container textarea:hover {
+      border: 1px solid #c50e0e; }
+
+#main-footer {
+  height: 2rem; }
+  #main-footer .footer-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+    #main-footer .footer-container .social .fas {
+      padding: 10px; }
+      #main-footer .footer-container .social .fas:hover {
+        color: #c50e0e; }

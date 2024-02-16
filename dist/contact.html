@@ -13,65 +13,58 @@
     <title>Contact | Art For Heart</title>
 </head>
 <body>
-
-    <nav id="main-navbar">
-        <h1 class="logo">
-            Art for <i class="fa-solid fa-heart"></i> 
-        </h1>
-        <ul>
-            <li><a href="./index.html" >Home</a></li>
-            <li>Art Gallery <i class="fa-solid fa-angle-down"></i>
-                <li>Canvas</li>
-                <li>Wooden Box</li>
-                <li>Canvas Board</li>
-                <li>Watercolors</li>
-                <li>Pencil Drawings</li>
-                <li>Available Art</li>
-            </li>
-            <li><a href="./about.html">About me</a></li>
-            <li><a href="./contact.html" class="current">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="contact-form">
-        <img src="./images/paper plain.webp" alt="Paper Plain">
-        <h2>Contact</h2>
-        <div class="conteiner">
-            <form>
-                <div>
-                 <label for="name">First Name</label>
-                 <input type="text" name="name" id="name">
-                </div>
-                <div>
-                 <label for="name">Last Name</label>
-                 <input type="text" name="name" id="name">
-                </div>
-                <div>
-                 <label for="name">Email</label>
-                 <input type="text" name="name" id="name">
-                </div>
-                <div>
-                 <label for="name">Phone</label>
-                 <input type="text" name="name" id="name">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" ></textarea>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </section>
-
-    <footer id="main-footer">
-        <div class="footer-container">
-            <p>&copy; by Art for Heart. 2024. All Rights Reserved</p>
-            <div class="social">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-solid fa-envelope"></i>
-              </div>
-        </div>
-    </footer>
+    <div id="app-wrapper">
+        <nav id="main-navbar">
+            <h1 class="logo py-2">
+                Art for <i class="fa-solid fa-heart"></i> 
+            </h1>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About me</a></li>
+                <li><a href="./contact.html" class="current">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <section id="contact-form" class="py-2">
+            <img src="./images/paper plain.webp" alt="Paper Plain">
+            <h2 class="py-1">Contact</h2>
+            <div class="container">
+                <form>
+                    <div>
+                     <label for="firstName">First Name</label>
+                     <input type="text" name="firstName" id="firstName">
+                    </div>
+                    <div>
+                     <label for="lastName">Last Name</label>
+                     <input type="text" name="lastName" id="lastName">
+                    </div>
+                    <div>
+                     <label for="email">Email</label>
+                     <input type="text" name="email" id="email" autocomplete="on">
+                    </div>
+                    <div>
+                     <label for="phone">Phone</label>
+                     <input type="text" name="phone" id="phone" autocomplete="on">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" ></textarea>
+                    </div>
+                    <button class="btn-contact" type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    
+        <footer id="main-footer">
+            <div class="footer-container py-2">
+                <p>2024 &copy; by Art for Heart. All Rights Reserved</p>
+                <div class="social">
+                    <i class=" fas fa-brands fa-facebook fa-2x"></i>
+                    <i class=" fas fa-brands fa-instagram fa-2x"></i>
+                    <i class=" fas fa-solid fa-envelope fa-2x"></i>
+                  </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
