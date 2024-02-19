@@ -44,6 +44,55 @@ button[class^="btn-"]:hover {
   color: #333;
   background: #f15959; }
 
+@media (max-width: 1024px) {
+  #app-wrapper {
+    width: 1000px; }
+    #app-wrapper #gallery .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); }
+    #app-wrapper #gallery img {
+      width: 15rem;
+      height: 20rem; }
+  #about-info .container p {
+    margin: 0 10rem; } }
+
+@media (max-width: 850px) {
+  #app-wrapper {
+    width: 770px; }
+    #app-wrapper #home-form .container {
+      margin: 0 100px; }
+      #app-wrapper #home-form .container h3 {
+        margin-top: 0.7rem; } }
+
+@media (max-width: 500px) {
+  #app-wrapper {
+    width: 400px; }
+    #app-wrapper h1 {
+      font-size: 32px; }
+    #app-wrapper h2 {
+      font-size: 25px;
+      padding: 1rem 0; }
+    #app-wrapper #main-navbar-gallery ul li {
+      padding: 0; }
+    #app-wrapper #gallery .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px; }
+    #app-wrapper #gallery img {
+      width: 10rem;
+      height: 13rem; }
+    #app-wrapper #home-form .container {
+      margin: 0 10px; }
+  #about-info .container p {
+    margin: 0 1rem; }
+  #contact-form img {
+    width: 10rem; }
+  #contact-form .container {
+    width: 400px;
+    padding: 0 2rem; }
+    #contact-form .container form input {
+      width: 100%; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -67,7 +116,11 @@ h1 {
   font-size: 50px; }
 
 h2 {
-  font-size: 35px; }
+  font-size: 35px;
+  font-weight: 300; }
+
+i {
+  display: inline-block; }
 
 #app-wrapper {
   max-width: 1200px;
@@ -76,7 +129,6 @@ h2 {
 #main-navbar {
   text-align: center; }
   #main-navbar i {
-    display: inline-block;
     color: #c50e0e; }
   #main-navbar ul {
     display: flex;
@@ -119,7 +171,7 @@ h2 {
 
 #gallery h1 {
   text-align: center;
-  margin-bottom: 3rem; }
+  margin-bottom: 1rem; }
 
 #gallery h2 {
   margin-left: 1.5rem; }
