@@ -128,8 +128,45 @@ i {
 
 #main-navbar {
   text-align: center; }
-  #main-navbar i {
-    color: #c50e0e; }
+  #main-navbar .logo-animation-heart {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #main-navbar .logo-animation-heart h1 {
+      margin-right: 20px; }
+    #main-navbar .logo-animation-heart .heart {
+      margin: 5px;
+      background: #c50e0e;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      transform: rotate(45deg);
+      animation: pulse 1s infinite; }
+      #main-navbar .logo-animation-heart .heart::after {
+        content: "";
+        background: #c50e0e;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        left: -50%; }
+      #main-navbar .logo-animation-heart .heart::before {
+        content: "";
+        background: #c50e0e;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50%;
+        left: -1%; }
+
+@keyframes pulse {
+  0% {
+    transform: rotate(45deg) scale(1); }
+  50% {
+    transform: rotate(45deg) scale(1.2); }
+  100% {
+    transform: rotate(45deg) scale(1); } }
   #main-navbar ul {
     display: flex;
     justify-content: center;
@@ -139,9 +176,45 @@ i {
     font-weight: 700; }
   #main-navbar-gallery {
     text-align: center; }
-    #main-navbar-gallery i {
-      color: #c50e0e;
-      padding: 5px; }
+    #main-navbar-gallery .logo-animation-heart {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #main-navbar-gallery .logo-animation-heart h1 {
+        margin-right: 20px; }
+      #main-navbar-gallery .logo-animation-heart .heart {
+        margin: 5px;
+        background: #c50e0e;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        transform: rotate(45deg);
+        animation: pulse 1s infinite; }
+        #main-navbar-gallery .logo-animation-heart .heart::after {
+          content: "";
+          background: #c50e0e;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          position: absolute;
+          left: -50%; }
+        #main-navbar-gallery .logo-animation-heart .heart::before {
+          content: "";
+          background: #c50e0e;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          position: absolute;
+          top: -50%;
+          left: -1%; }
+
+@keyframes pulse {
+  0% {
+    transform: rotate(45deg) scale(1); }
+  50% {
+    transform: rotate(45deg) scale(1.2); }
+  100% {
+    transform: rotate(45deg) scale(1); } }
     #main-navbar-gallery ul {
       display: flex;
       justify-content: center;
