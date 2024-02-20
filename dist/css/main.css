@@ -44,55 +44,6 @@ button[class^="btn-"]:hover {
   color: #333;
   background: #f15959; }
 
-@media (max-width: 1024px) {
-  #app-wrapper {
-    width: 1000px; }
-    #app-wrapper #gallery .container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); }
-    #app-wrapper #gallery img {
-      width: 15rem;
-      height: 20rem; }
-  #about-info .container p {
-    margin: 0 10rem; } }
-
-@media (max-width: 850px) {
-  #app-wrapper {
-    width: 770px; }
-    #app-wrapper #home-form .container {
-      margin: 0 100px; }
-      #app-wrapper #home-form .container h3 {
-        margin-top: 0.7rem; } }
-
-@media (max-width: 500px) {
-  #app-wrapper {
-    width: 400px; }
-    #app-wrapper h1 {
-      font-size: 32px; }
-    #app-wrapper h2 {
-      font-size: 25px;
-      padding: 1rem 0; }
-    #app-wrapper #main-navbar-gallery ul li {
-      padding: 0; }
-    #app-wrapper #gallery .container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10px; }
-    #app-wrapper #gallery img {
-      width: 10rem;
-      height: 13rem; }
-    #app-wrapper #home-form .container {
-      margin: 0 10px; }
-  #about-info .container p {
-    margin: 0 1rem; }
-  #contact-form img {
-    width: 10rem; }
-  #contact-form .container {
-    width: 400px;
-    padding: 0 2rem; }
-    #contact-form .container form input {
-      width: 100%; } }
-
 * {
   margin: 0;
   padding: 0;
@@ -120,7 +71,8 @@ h2 {
   font-weight: 300; }
 
 i {
-  display: inline-block; }
+  display: inline-block;
+  padding: 0.3rem; }
 
 #app-wrapper {
   max-width: 1200px;
@@ -221,7 +173,8 @@ i {
       align-items: center;
       gap: 30px;
       padding: 10px;
-      font-weight: 700; }
+      font-weight: 700;
+      margin-bottom: 0.5rem; }
       #main-navbar-gallery ul li {
         color: #333;
         display: inline-block;
@@ -257,27 +210,38 @@ i {
     height: 23rem; }
 
 #home-form .container {
-  text-align: center;
-  margin: 0 200px; }
-  #home-form .container form .form-group {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-bottom: 0.5rem; }
-    #home-form .container form .form-group label {
-      display: inline-block;
-      margin: 10px 0; }
-    #home-form .container form .form-group input {
-      padding: 10px;
-      border: none; }
-      #home-form .container form .form-group input:hover {
-        border: 1px solid #c50e0e; }
-    #home-form .container form .form-group textarea {
-      padding: 30px;
-      margin-bottom: 20px;
-      border: none; }
-      #home-form .container form .form-group textarea:hover {
-        border: 1px solid #c50e0e; }
+  text-align: center; }
+  #home-form .container form {
+    display: grid;
+    grid-template-areas: 'name email phone' 'message message message';
+    grid-gap: 0.3rem; }
+    #home-form .container form #name-div {
+      grid-area: name; }
+    #home-form .container form #email-div {
+      grid-area: email; }
+    #home-form .container form #phone-div {
+      grid-area: phone; }
+    #home-form .container form #message-div {
+      grid-area: message; }
+    #home-form .container form .form-group {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin-bottom: 0.5rem; }
+      #home-form .container form .form-group label {
+        display: inline-block;
+        margin: 10px 0; }
+      #home-form .container form .form-group input {
+        padding: 10px;
+        border: none; }
+        #home-form .container form .form-group input:hover {
+          border: 1px solid #c50e0e; }
+      #home-form .container form .form-group textarea {
+        padding: 30px;
+        margin-bottom: 20px;
+        border: none; }
+        #home-form .container form .form-group textarea:hover {
+          border: 1px solid #c50e0e; }
 
 #about-info .container {
   display: flex;
@@ -321,3 +285,66 @@ i {
       padding: 10px; }
       #main-footer .footer-container .social .fas:hover {
         color: #c50e0e; }
+
+@media (max-width: 1024px) {
+  #app-wrapper {
+    width: 1000px; }
+    #app-wrapper #gallery .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); }
+    #app-wrapper #gallery img {
+      width: 15rem;
+      height: 20rem; }
+  #about-info .container p {
+    margin: 0 10rem; } }
+
+@media (max-width: 850px) {
+  #app-wrapper {
+    width: 770px; }
+    #app-wrapper #home-form .container {
+      margin: 0 100px; }
+      #app-wrapper #home-form .container h3 {
+        margin-top: 0.7rem; } }
+
+@media (max-width: 500px) {
+  #app-wrapper {
+    width: 400px; }
+    #app-wrapper h1 {
+      font-size: 32px; }
+    #app-wrapper h2 {
+      font-size: 25px;
+      padding: 1rem 0; }
+    #app-wrapper #main-navbar .logo-animation-heart .heart, #app-wrapper #main-navbar-gallery .logo-animation-heart .heart {
+      width: 25px;
+      height: 25px; }
+      #app-wrapper #main-navbar .logo-animation-heart .heart:after, #app-wrapper #main-navbar-gallery .logo-animation-heart .heart:after {
+        width: 25px;
+        height: 25px; }
+      #app-wrapper #main-navbar .logo-animation-heart .heart:before, #app-wrapper #main-navbar-gallery .logo-animation-heart .heart:before {
+        width: 25px;
+        height: 25px; }
+    #app-wrapper #main-navbar ul li, #app-wrapper #main-navbar-gallery ul li {
+      padding: 0; }
+    #app-wrapper #gallery .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px; }
+    #app-wrapper #gallery img {
+      width: 10rem;
+      height: 13rem; }
+    #app-wrapper #home-form .container {
+      margin: 20px; }
+      #app-wrapper #home-form .container form {
+        display: grid;
+        grid-template-areas: 'name' 'email'  'phone' 'message'; }
+        #app-wrapper #home-form .container form .form-group input {
+          width: 100%; }
+  #about-info .container p {
+    margin: 0 1rem; }
+  #contact-form img {
+    width: 10rem; }
+  #contact-form .container {
+    width: 400px;
+    padding: 0 2rem; }
+    #contact-form .container form input {
+      width: 100%; } }

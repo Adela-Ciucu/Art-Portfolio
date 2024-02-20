@@ -1,0 +1,140 @@
+@media(max-width:1024px) {
+
+   #app-wrapper {
+    width: 1000px;
+
+    #gallery {
+        .container {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+        }
+
+        img {
+            width: 15rem;
+            height: 20rem;
+        }
+    }
+   }
+
+   #about-info {
+    .container {
+      p {
+         margin:0 10rem;
+      }
+    }
+ }
+}
+
+@media(max-width:850px){
+    #app-wrapper {
+        width: 770px;
+
+        #home-form {
+            .container {
+                margin: 0 100px;
+                h3 {
+                    margin-top: 0.7rem;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    #app-wrapper {
+        width: 400px;
+
+        h1 {
+            font-size: 32px;
+        }
+
+        h2 {
+            font-size: 25px;
+            padding: 1rem 0;
+        }
+
+        #main-navbar, #main-navbar-gallery {
+            .logo-animation-heart {
+                .heart {
+                    width: 25px;
+                    height: 25px;
+
+                    &:after {
+                        width: 25px;
+                        height: 25px; 
+                    }
+                    &:before {
+                        width: 25px;
+                        height: 25px; 
+                    }
+                }
+            }
+
+            ul{
+                li {
+                    padding: 0;
+                }
+            }
+        }
+
+        #gallery {
+          .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+          }
+
+          img {
+            width: 10rem;
+            height: 13rem;
+          }
+        }
+
+        #home-form {
+           .container {
+            margin: 20px;
+
+            form {
+                display: grid;
+                grid-template-areas: 
+                 'name'
+                 'email' 
+                 'phone'
+                'message';
+
+                .form-group{
+                    input {
+                        width: 100%;
+                    }
+                }
+            }
+           }
+        }
+
+    }
+
+    #about-info {
+        .container {
+            p {
+                margin: 0 1rem;
+            }
+        }
+    }
+
+    #contact-form {
+        img {
+            width: 10rem;
+        }
+
+        .container {
+            width: 400px;
+            padding: 0 2rem;
+
+            form {
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
